@@ -1,0 +1,81 @@
+:root {
+  /* Primary */
+  --lightcyan: hsl(193, 38%, 86%);
+  --neongreen: hsl(150, 100%, 66%);
+
+  /* Neutral */
+  --grayisblue: hsl(217, 19%, 38%);
+  --darkgrayishblue: hsl(217, 19%, 24%);
+  --darkblue: hsl(218, 23%, 16%);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--darkblue);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Manrope", sans-serif;
+  padding: 2rem;
+  font-weight: 500;
+}
+
+main {
+  background-color: var(--darkgrayishblue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  max-width: 35rem;
+  width: fit-content;
+  height: 20rem;
+  border-radius: 1.5rem;
+}
+
+#word {
+  color: hsl(150, 100%, 66%);
+}
+
+.advice {
+  text-transform: uppercase;
+  color: hsl(150, 100%, 66%);
+  letter-spacing: 0.2rem;
+  font-size: small;
+}
+
+.quote {
+  font-size: 1.8rem;
+  padding: 2.25rem 2rem;
+  color: hsl(193, 38%, 86%);
+}
+
+.div-btn {
+  display: flex;
+  position: absolute;
+  margin: 0 auto -20rem;
+}
+
+.separator {
+  max-width: 75%;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 1rem;
+  border: none;
+  background-color: hsl(150, 100%, 66%);
+}
+
+button:hover {
+  box-shadow: 0 0 2rem var(--neongreen);
+}
